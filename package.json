@@ -1,0 +1,32 @@
+{
+  "name": "world-cup-sweepstake-dashboard",
+  "version": "1.0.0",
+  "description": "Live, configurable World Cup 2026 sweepstake dashboard with colour-coded team ownership, live scores, group tables, a leaderboard and a head-to-head filter.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "world-cup",
+    "2026",
+    "sweepstake",
+    "dashboard",
+    "live-scores",
+    "football",
+    "soccer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

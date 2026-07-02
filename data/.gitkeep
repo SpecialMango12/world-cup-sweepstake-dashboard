@@ -1,0 +1,2 @@
+# This folder holds the runtime-generated sweepstake configuration (config.json).
+# config.json is git-ignored so every deployment starts with a clean first-run setup.

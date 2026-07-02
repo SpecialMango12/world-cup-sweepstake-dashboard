@@ -1,0 +1,12 @@
+node_modules/
+_tmp/
+.env
+.env.*
+*.log
+.DS_Store
+
+# Stale local backup archives — not for publishing
+*.zip
+
+# Per-deployment sweepstake configuration (created at runtime via setup)
+data/config.json

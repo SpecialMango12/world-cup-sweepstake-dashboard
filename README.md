@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏆 World Cup Sweepstake Dashboard
+# World Cup Sweepstake Dashboard
 
 **A live, colour-coded dashboard for running a World Cup 2026 sweepstake with your family or friends.**
 
@@ -18,7 +18,7 @@ required.
 
 ---
 
-## ✨ What it does
+## What it does
 
 Everyone in your group is given a colour and a set of teams. As the tournament plays out,
 the dashboard tints every fixture, group table and standings row to its owner so you can
@@ -28,7 +28,7 @@ On first run you're taken through a short **setup wizard**: name your sweepstake
 people (with colours), and either run a **random draw** or assign the 48 teams by hand.
 Your configuration is stored on the server and shared with everyone who visits.
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### First-run welcome
 
@@ -61,7 +61,7 @@ Pick any two people to see only the matches where their teams meet, plus a runni
   <img src="docs/screenshots/head-to-head.png" alt="Head-to-head view" width="800">
 </p>
 
-## 🌟 Features
+## Features
 
 - **First-run setup wizard** — a guided flow (welcome → setup) to create your sweepstake:
   tournament name, members & colours, and team assignment.
@@ -86,7 +86,7 @@ Pick any two people to see only the matches where their teams meet, plus a runni
   start over at any time.
 - **Responsive, modern UI** — Bootstrap 5 + a custom dark theme. No build step.
 
-## 🚀 Getting started
+## Getting started
 
 **Requirements:** Node.js 18 or newer.
 
@@ -108,7 +108,7 @@ the setup wizard. Once you save, the dashboard launches with your sweepstake.
 
 To use a different port: `PORT=4000 npm start`.
 
-## 🧭 Setting up your sweepstake
+## Setting up your sweepstake
 
 The setup wizard has four steps:
 
@@ -122,7 +122,7 @@ To reconfigure later, click the **Setup** (gear) button in the dashboard header,
 `/setup.html` directly. You can also **export** your setup to a JSON file and **import** it
 elsewhere, or **start over** to wipe the configuration.
 
-## ⚙️ Configuration & storage
+## Configuration & storage
 
 Your sweepstake configuration is stored **server-side**, shared across everyone who visits
 the server, in a single JSON file:
@@ -151,7 +151,7 @@ fresh with its own welcome/setup flow. The shape is:
 > overwriting your setup, add a simple passphrase check to the `PUT`/`DELETE`
 > `/api/config` handlers in [`server.js`](server.js).
 
-## 🔌 API endpoints
+## API endpoints
 
 **Configuration**
 
@@ -171,14 +171,14 @@ fresh with its own welcome/setup flow. The shape is:
 | `GET`  | `/api/stadiums`  | 16 venues                      | 24h   |
 | `GET`  | `/api/health`    | Server health + cache state    | –     |
 
-## 🛠️ Tech stack
+## Tech stack
 
 - **Node.js + Express** server — serves the front-end, stores the config, and proxies the
   live API to avoid browser CORS issues, with a short in-memory cache.
 - **HTML + Bootstrap 5 + vanilla JS** front-end — no build step, no framework.
 - **nodemon** for hot-reload during development.
 
-## 📁 Project structure
+## Project structure
 
 ```
 World_Cup_Dashboard/
@@ -203,17 +203,17 @@ World_Cup_Dashboard/
 └── README.md
 ```
 
-## 📡 Data source
+## Data source
 
 Live match data comes from the free [worldcup26.ir](https://worldcup26.ir/?lang=en) REST API
 ([source](https://github.com/rezarahiminia/worldcup2026)). This project is not affiliated
 with FIFA or the data provider.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get set up and
 open a pull request.
 
-## 📄 License
+## License
 
 Released under the [MIT License](LICENSE).
